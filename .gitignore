@@ -11,6 +11,12 @@
 # production
 /build
 
+# Tizzy CSS
+/src/css
+/src/fonts
+/src/images
+
+
 # misc
 .DS_Store
 .env.local
