@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {connect} from 'react-redux'
 
 import {H3Head} from './elements/textElements'
 import {Wrapper,Container,OneColumn,HalfColumn} from './elements/gridElements';
@@ -6,6 +7,7 @@ import {List, ListItem} from './elements/typoElements';
 
 class App extends Component {
     render() {
+		console.log(this.props.elements)
         return (
             <Wrapper>
 <Container>
@@ -58,4 +60,10 @@ class App extends Component {
     }
 }
 
-export default App;
+const mapStateToProps = state => ({
+	elements: state.elements
+})
+
+const mapDispatchToProps = dispatch => ({})
+
+export default connect(mapStateToProps,mapDispatchToProps)(App);
