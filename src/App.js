@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Toolbar from './components/common/Toolbar';
-import Wrapper from './components/common/Wrapper'
+import Wrapper from './components/common/Wrapper';
 
 class App extends Component {
   render() {

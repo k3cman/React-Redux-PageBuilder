@@ -29,6 +29,7 @@ code {
 }
 
 .toolbar{
+  width:100%;
   padding-top:2px;
   padding-bottom:1px;
   background-color:rgba(0,0,0,0.7);
@@ -53,4 +54,24 @@ code {
   height:100%;
   width:100%;
   padding:5px;
+}
+
+.toolbar-row{
+  width:100%;
+  display:flex;
+  flex-direction:row;
+  justify-items: space-between;
+  align-items:space-between;
+}
+
+.move{
+  font-weight: bold;
+  margin-left:auto;
+  color:black;
+}
+
+.move li{
+  background-color:#ccc;
+  padding:5px;
+  cursor:pointer;
 }
