@@ -29,11 +29,26 @@ const initialState = [
         children:[
             {
                 col:'sixteen',
-                type:'h1',
-                text:'Heading 1 from REDUX',
+                type:'h3head',
+                text:'Heading 3 from REDUX',
             }
         ],
         sort:0
+    },
+    {
+        col:'col-3',
+        children:[
+            {
+                col:'eight',
+                type:'image',
+                text:'http://www.enmongroup.com/data/Sr/huppe/trans.jpg'
+            },
+            {
+                col:'eight',
+                type:'blockquote',
+                text:'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+            }
+        ]
     }
 ]
 

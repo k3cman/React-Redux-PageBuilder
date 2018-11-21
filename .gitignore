@@ -12,9 +12,9 @@
 /build
 
 # Tizzy CSS
-/src/css
-/src/fonts
-/src/images
+# /src/css
+# /src/fonts
+# /src/images
 
 
 # misc
