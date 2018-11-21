@@ -1,0 +1,1 @@
+export const ADD_TEXT_ITEM = 'ADD_TEXT_ITEM'
