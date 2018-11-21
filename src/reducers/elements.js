@@ -1,3 +1,5 @@
+
+
 const initialState = [
     {
         col:'col-1',
@@ -20,7 +22,8 @@ const initialState = [
                 col:'four',
                 type:'p',
                 text:'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
-            }
+            },
+            
         ],
         sort:1
     },
@@ -48,7 +51,19 @@ const initialState = [
                 type:'blockquote',
                 text:'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
             }
-        ]
+        ],
+        sort:2
+    },
+    {
+        col:'col-4',
+        children:[
+           {
+               col:'sixteen',
+               type:'p',
+               text:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, repellendus impedit voluptatum consequatur aspernatur quae sint totam soluta labore libero quam iusto! Asperiores aspernatur explicabo quos perferendis dolorum, dicta ea.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, repellendus impedit voluptatum consequatur aspernatur quae sint totam soluta labore libero quam iusto! Asperiores aspernatur explicabo quos perferendis dolorum, dicta ea.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, repellendus impedit voluptatum consequatur aspernatur quae sint totam soluta labore libero quam iusto! Asperiores aspernatur explicabo quos perferendis dolorum, dicta ea.'
+           }
+        ],
+        sort:2
     }
 ]
 

@@ -27,7 +27,6 @@ export default class Element extends Component {
         return out;
     }
   render() {
-      console.log(this.props);
     return (
       <div className={`${this.props.col} columns`}>
         {this.renderElement(this.props.type, this.props.data)}

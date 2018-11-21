@@ -1,7 +1,7 @@
 import React from 'react'
 
 export const Wrapper = props => {
-    return <div id="wrapper">{props.children}</div>
+    return <div id="wrapper" style={{paddingBottom:'50px'}}>{props.children}</div>
 }
 
 export const Column = props => {

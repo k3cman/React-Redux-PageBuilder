@@ -17,3 +17,22 @@
     margin-top:20px;
     padding:20px;
 } */
+
+.fixed-bottom{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    padding:10px;
+}
+
+.fixed-bottom button{
+    border-radius:10px;
+    padding:5px;
+    background-color:royalblue;
+    outline:none;
+    border:none;
+    margin-right:10px;
+    color:#ccc;
+    cursor: pointer;
+
+}

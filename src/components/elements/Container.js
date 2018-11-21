@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import Element from '../builder/Element';
+import {connect} from 'react-redux';
+import {selectElement} from '../../actions/moveActions';
 
-export default class Container extends Component {
+class Container extends Component {
   render() {
     const {children} = this.props.data;
-    console.log(this.props.data)
     return (
-      <div className="container" id={this.props.data.col}>
+      <div className="container" onClick={() => this.props.selectElement(this.props.data.col)} id={this.props.data.col} style={{paddingBottom:'10px'}}>
         {children.map(child => {
           return(
             <Element type={child.type} col={child.col} data={child.text} />
@@ -16,3 +17,9 @@ export default class Container extends Component {
     )
   }
 }
+
+const mapStateToProps = state => ({
+
+})
+
+export default connect(mapStateToProps, {selectElement})(Container);

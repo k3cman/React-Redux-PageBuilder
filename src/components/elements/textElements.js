@@ -5,7 +5,7 @@ export const H3Head = (props) => {
         <Fragment>
             <h3 className="headline">{props.children}</h3>
             <span className="line margin-bottom-30"></span>
-            <div class="clearfix"></div>
+            <div className="clearfix"></div>
         </Fragment>
     )
 }
