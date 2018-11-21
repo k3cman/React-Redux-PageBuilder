@@ -1,28 +1,22 @@
-import React, { Component } from 'react';
-import {connect} from 'react-redux';
-import BuildElements from './BuildElements';
-import { Wrapper} from '../elements/gridElements'
+import React, { Component, Fragment } from 'react'
+import {connect} from 'react-redux'
+import Container from '../elements/Container'
+import _ from 'lodash'
 
 class Builder extends Component {
-    renderElements = () => {
-        this.props.elements.map((e,index) => {
-            return (
-                <BuildElements element={e} key={index} />
-            )
-        })
-    }
-    render() {
-        const {elements} = this.props;
-    return (
-        <Wrapper>
-   
-        {this.props.elements.map((e,index) => {
-            return (
-                <BuildElements element={e} key={index} />
-            )
-        })}
-     
-        </Wrapper>
+  render() {
+      const {elements} = this.props;
+      const sorted = _.sortBy(elements,['sort'])
+      console.log(sorted);
+
+    return (<Fragment>
+      {sorted.map(element => {
+        return(
+          <Container data={element} />
+        )
+      })}
+    </Fragment>
+      
     )
   }
 }
@@ -31,4 +25,5 @@ const mapStateToProps = state => ({
     elements: state.elements
 })
 
-export default connect(mapStateToProps,{})(Builder);
+
+export default connect(mapStateToProps,{})(Builder)
