@@ -32,8 +32,8 @@ export default (state = initialState, action) => {
         case ADD_TEXT_ITEM:
             return [...state, action.payload];
         case MOVE_EL_UP:
-            const el = state.find(x => x.id === action.payload);
-            return el.sort = el.sort-1;
+            const el = state.findIndex(o => o.id === action.payload);
+            console.log(state[el])
         default:
             return state;
     }
